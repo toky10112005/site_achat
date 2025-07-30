@@ -9,6 +9,8 @@ index.php:
                         -boutton du panier ."Si la personne n'est pas connecté"=>connection/        inscription
         
         -Boutton liste des catégorie(simple barre)      
-        -affichage d'un produit par catégorie.
+        -affichage d'un produit par catégorie.  OK
+
+        
 
         

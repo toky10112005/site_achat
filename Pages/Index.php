@@ -1,6 +1,6 @@
 <?php
 require('../Models/Header.php');
-require('../Incl/fonction_vue.php');
+require('../Incl/fonction_vue_index.php');
 
 $list_categories = aff_categories();
 $produits_une = aff_produits();
@@ -14,7 +14,7 @@ $produits_une = aff_produits();
       <ul class="nav flex-column">
         <?php foreach($list_categories as $categorie): ?>
           <li class="nav-item mb-2">
-            <a href="#" class="nav-link text-white"><?= htmlspecialchars($categorie) ?></a>
+            <a href="Produits_categorie.php?categorie_id=<?= $categorie['id'] ?>" class="nav-link text-white"><?= htmlspecialchars($categorie['nom']) ?></a>
           </li>
         <?php endforeach; ?>
       </ul>
@@ -27,7 +27,7 @@ $produits_une = aff_produits();
         <?php foreach($produits_une as $produit): ?>
           <div class="col">
             <div class="card h-100 border-warning product-card">
-              <a href="produits_categorie.php?categorie_id=<?= $produit['categorie_id'] ?>">
+              <a href="Produits_categorie.php?categorie_id=<?= $produit['categorie_id'] ?>">
                 <img src="<?= htmlspecialchars($produit['image']) ?>" 
                      class="card-img-top p-2" 
                      alt="<?= htmlspecialchars($produit['nom']) ?>"
@@ -35,7 +35,7 @@ $produits_une = aff_produits();
               </a>
               <div class="card-body text-center">
                 <h5 class="card-title">
-                  <a href="produits_categorie.php?categorie_id=<?= $produit['categorie_id'] ?>" 
+                  <a href="Produits_categorie.php?categorie_id=<?= $produit['categorie_id'] ?>" 
                      class="text-decoration-none text-dark">
                     <?= htmlspecialchars($produit['nom']) ?>
                   </a>

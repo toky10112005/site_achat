@@ -100,6 +100,12 @@
                         <i class="bi bi-person-plus"></i> Inscription
                     </a>
                 <?php else: ?>
+                    <a href="../Pages/Panier.php" class="btn btn-outline-dark me-3 position-relative">
+                            <i class="bi bi-cart3"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                <?= $_SESSION['panier_count'] ?? 0 ?>
+                        </span>
+                    </a>
                     <span class="user-greeting me-3">
                         <i class="bi bi-person-circle"></i> <?= htmlspecialchars($_SESSION['nom']) ?>
                     </span>

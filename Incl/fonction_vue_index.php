@@ -3,17 +3,16 @@
 
     function aff_categories(){
         $conn=dbconnect();
-        $sql="SELECT nom FROM categories";
+        $sql="SELECT nom,id FROM categories";
         $result=mysqli_query($conn,$sql);
         $valiny=array();
         if($result){
              while($row=mysqli_fetch_assoc($result)){
-                    $valiny[]=$row['nom'];
+                    $valiny[]=$row;
                 }
         }else{
             error_log("Erreur SQL: " . mysqli_error(dbconnect()));
         }
-
         return $valiny;
     }
 
