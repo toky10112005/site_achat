@@ -1,6 +1,7 @@
 # site_achat
 
 index.php:
+        -Connexion.php(Besoin d'être inscrit avant achat)
         -haut de page => -menu,
                         -barre de Recherche
                         -Coin de la barre boutton pour liste des catégorie de produits

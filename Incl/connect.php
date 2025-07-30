@@ -5,7 +5,7 @@ function dbconnect()
     static $connect = null;
 
     if ($connect === null) {
-        $connect = mysqli_connect('localhost', 'root','P@ssData', 'Quiz');
+        $connect = mysqli_connect('localhost', 'root','P@ssData', 'Coffre');
 
         if (!$connect) {
 
