@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="../Assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <style>
-        .gold-bg { background-color: #D4AF37; }
+        .gold-bg { background-color: #d4a508ff; }
         .dark-bg { background-color: #1a1a1a; }
-        .gold-text { color: #D4AF37; }
-        .gold-border { border-color: #D4AF37 !important; }
+        .gold-text { color: #d4a508ff; }
+        .gold-border { border-color: #d4a508ff !important; }
 
         /* Logo personnalisé */
         .custom-logo {
@@ -24,12 +24,12 @@
             height: 55px;
             background: #1a1a1a;
             border-radius: 50%;
-            border: 2px solid #D4AF37;
+            border: 2px solid #d4a508ff;
             transition: all 0.3s ease;
         }
         .custom-logo-icon {
             font-size: 2.0rem;
-            color: #D4AF37;
+            color: #d4a508ff;
         }
         .custom-logo:hover {
             transform: rotate(15deg);

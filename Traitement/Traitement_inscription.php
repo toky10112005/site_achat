@@ -8,5 +8,7 @@ session_start();
 
     $_SESSION['nom']=$_GET['nom'];
 
+    $_SESSION['check']=1;
+
     header('Location:../Pages/Index.php');
 ?>
