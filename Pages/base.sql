@@ -11,6 +11,13 @@ CREATE TABLE produits (
   image VARCHAR(255)
 );
 
+CREATE TABLE categories (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  nom VARCHAR(100) NOT NULL,
+  description TEXT
+);
+
+
 -- Table utilisateurs
 CREATE TABLE users (
   id INT PRIMARY KEY AUTO_INCREMENT,
@@ -36,3 +43,7 @@ CREATE TABLE commande_details (
   quantite INT,
   prix DECIMAL(10,2)
 );
+
+ALTER TABLE produits
+ADD COLUMN categorie_id INT,
+ADD FOREIGN KEY (categorie_id) REFERENCES categories(id);
