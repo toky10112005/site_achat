@@ -12,7 +12,7 @@
         .gold-border { border-color: #D4AF37 !important; }
         /* Correction survol boutons */
         .btn-outline-warning:hover { color: #1a1a1a !important; }
-        .gold-bg:hover { color: #1a1a1a !important; }
+        .gold-bg:hover { color: #D4AF37 !important; }
     </style>
 </head>
 <body class="dark-bg">
